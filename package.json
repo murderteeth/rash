@@ -1,10 +1,10 @@
 {
-  "name": "rash",
+  "name": "rash-cli",
   "description": "A CLI tool that translates natural language into bash commands.",
-  "author": "murderteeth",
+  "author": "murderteeth <murdertxxth@gmail.com>",
   "version": "1.0.0",
   "main": "build/index.js",
-  "license": "MIT",
+  "license": "CC0",
   "scripts": {
     "build": "tsc",
     "console": "tsc && node ./build/index.js"
