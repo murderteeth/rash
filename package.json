@@ -2,7 +2,10 @@
   "name": "rash-cli",
   "description": "A CLI tool that translates natural language into bash commands.",
   "author": "murderteeth <murdertxxth@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "keywords": [
+    "gpt", "bash", "cli", "llm"
+  ],
   "main": "build/index.js",
   "license": "CC0",
   "scripts": {
