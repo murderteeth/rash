@@ -1,4 +1,4 @@
-![murderteeth_pixel_art_of_a_cute_cybernetic_virus_anime_aestheti_b8a3e1cf-6a71-4d7f-be09-92069c8d8bfa-removebg-preview](https://github.com/murderteeth/rash/assets/89237203/27ac0260-c90d-4f5c-ae97-27ff5ec39976)
+![murderteeth_pixel_art_of_a_cute_cybernetic_virus_anime_aestheti_b8a3e1cf-6a71-4d7f-be09-92069c8d8bfa-removebg-preview](https://github.com/murderteeth/rash/assets/89237203/a1955cad-1213-4570-9bee-69db58afdb82)
 
 # rash
 A simple cli tool that translates natural language into bash commands. Rash uses OpenAI GPT-4, bring your own API key.
@@ -14,10 +14,7 @@ Interactive mode
 rash
 ```
 
-
-
-https://github.com/murderteeth/rash/assets/89237203/a39506a0-1339-4d59-a56d-aa85381e7065
-
+https://github.com/murderteeth/rash/assets/89237203/51f80396-a7e7-4eb6-9f85-65a80ba67e4d
 
 ## configure
 First, configure an environment variable called `OPENAI_API_KEY` and set it to your openai api key. If you need a key, go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
