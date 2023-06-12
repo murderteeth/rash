@@ -14,6 +14,11 @@ Interactive mode
 rash
 ```
 
+
+
+https://github.com/murderteeth/rash/assets/89237203/a39506a0-1339-4d59-a56d-aa85381e7065
+
+
 ## configure
 First, configure an environment variable called `OPENAI_API_KEY` and set it to your openai api key. If you need a key, go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
 
