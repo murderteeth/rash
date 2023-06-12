@@ -44,7 +44,10 @@ async function toBash(input: string) {
     }
 
     const line = commandline || await new Promise<string>(resolve => rl.once('line', resolve))
-    if (line === 'quit' || line === 'q') {
+    if (line === '') {
+      rl.close()
+      continue
+    } else if (line === 'quit' || line === 'q') {
       rl.close()
       process.exit()
     } else {
