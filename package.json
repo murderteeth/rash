@@ -1,8 +1,8 @@
 {
   "name": "rash-cli",
-  "description": "A CLI tool that translates natural language into bash commands.",
+  "description": "A cli tool that translates natural language into bash commands and warns you before you do something stupid.",
   "author": "murderteeth <murdertxxth@gmail.com>",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "gpt",
     "bash",

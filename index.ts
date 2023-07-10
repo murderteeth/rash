@@ -33,6 +33,13 @@ FORMAT:
   "severity": "none" | "low" | "medium" | "high" | "critical",
   "summary": "a very brief, one sentance, summary of the security check result"
 }
+`,
+
+  debug_system: oneLine`you are a savant at console error messages.
+you only know console error messages, you don't know anything else.
+USER will input a console error message.
+evaluate USER's error message and respond with the most likely root cause.
+if you're not sure what the root cause of the error is, say "IDK".
 `
 }
 
@@ -54,6 +61,13 @@ async function securityCheck(input: string) {
     { role: 'user', content: input }
   ], null, STRONGEST_MODEL, 0) as string
   return JSON.parse(result) as SecurityCheck
+}
+
+async function debugCheck(input: string) {
+  return await next_message([
+    { role: 'system', content: ai_prompts.debug_system },
+    { role: 'user', content: input }
+  ], null, STRONGEST_MODEL, 0)
 }
 
 (async () => {
@@ -127,15 +141,24 @@ async function securityCheck(input: string) {
       rl.close()
 
       if(confirmed) {
-        const { stdout, stderr } = await execPromise(bash)
-        console.log()
-        console.log(chalk.black.bgCyan(bash))
-        console.log()
-        console.log(stdout)
-        console.log()
-        if(stderr) {
+        try {
+          const { stdout } = await execPromise(bash)
           console.log()
-          console.error(chalk.red(stderr))
+          console.log(chalk.black.bgCyan(bash))
+          console.log()
+          console.log(stdout)
+          console.log()
+        } catch(error) {
+          const spinner = new Spinner()
+          spinner.setSpinnerString(14)
+          spinner.start()
+          const debug = await debugCheck((error as any).toString())
+          spinner.stop(true)
+
+          console.log()
+          console.error(chalk.red(error))
+          console.log('-----------------------------')
+          console.error(chalk.red(debug))
           console.log()
         }
       }
