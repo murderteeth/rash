@@ -14,7 +14,19 @@ Interactive mode
 rash
 ```
 
-https://github.com/murderteeth/rash/assets/89237203/51f80396-a7e7-4eb6-9f85-65a80ba67e4d
+Quit
+```bash
+q, quit, or ctrl-c
+```
+
+https://github.com/murderteeth/rash/assets/89237203/e1e714f4-890f-4550-855f-39c27f017118
+
+
+## natural language command examples
+- `stop all docker containers`
+- `kill the process running on port 3000`
+- `find files at path ./ containing the text 'xyz'`
+
 
 ## configure
 First, configure an environment variable called `OPENAI_API_KEY` and set it to your openai api key. If you need a key, go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
@@ -36,6 +48,8 @@ cp .env.example .env
 yarn
 yarn build
 ```
+
+
 
 ## dev test
 ```bash
