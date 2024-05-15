@@ -2,9 +2,9 @@ import { ChatCompletionRequestMessage, ChatCompletionRequestMessageFunctionCall,
 import { AxiosResponse } from 'axios'
 
 export const DEFAULT_MODEL = 'gpt-3.5-turbo-0613'
-export const STRONGEST_MODEL = 'gpt-4-0613'
+export const STRONGEST_MODEL = 'gpt-4o-2024-05-13'
 export const MODELS = [DEFAULT_MODEL, STRONGEST_MODEL]
-export type Model = 'gpt-4-0613' | 'gpt-3.5-turbo-0613';
+export type Model = 'gpt-4o-2024-05-13' | 'gpt-3.5-turbo-0613';
 
 export interface GptFunction {
   name: string

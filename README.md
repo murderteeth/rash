@@ -1,22 +1,11 @@
 ![murderteeth_pixel_art_of_a_cute_cybernetic_virus_anime_aestheti_b8a3e1cf-6a71-4d7f-be09-92069c8d8bfa-removebg-preview](https://github.com/murderteeth/rash/assets/89237203/a1955cad-1213-4570-9bee-69db58afdb82)
 
 # rash
-A simple cli tool that translates natural language into bash commands. Rash uses OpenAI GPT-4, bring your own API key.
+A cli tool that translates natural language into bash commands. Rash uses OpenAI GPT-4o, bring your own API key.
 
 ## usage
-One-shot mode
 ```bash
 rash <natural language description of what you want to do>
-```
-
-Interactive mode
-```bash
-rash
-```
-
-Quit
-```bash
-q, quit, or ctrl-c
 ```
 
 https://github.com/murderteeth/rash/assets/89237203/e1e714f4-890f-4550-855f-39c27f017118
@@ -29,7 +18,7 @@ https://github.com/murderteeth/rash/assets/89237203/e1e714f4-890f-4550-855f-39c2
 
 
 ## configure
-First, configure an environment variable called `OPENAI_API_KEY` and set it to your openai api key. If you need a key, go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
+Configure an environment variable called `OPENAI_API_KEY` and set it to your openai api key. If you need a key, go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
 
 ## install
 ```bash
@@ -45,13 +34,15 @@ npm uninstall -g rash-cli
 ```bash
 cp .env.example .env
 # configure .env
-yarn
-yarn build
+bun install
+bun build
 ```
-
-
 
 ## dev test
 ```bash
-yarn console
+bun run console
+```
+or just
+```bash
+bun run index.ts
 ```
