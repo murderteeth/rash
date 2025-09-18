@@ -3,6 +3,8 @@
 # rash
 A cli tool that translates natural language into bash commands. Rash uses OpenAI GPT-4o, bring your own API key.
 
+use an agent now ha ha it was fun
+
 ## usage
 ```bash
 rash <natural language description of what you want to do>
